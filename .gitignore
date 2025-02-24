@@ -47,6 +47,7 @@ local.properties
 *.jar
 *.war
 *.ear
+*.class
 ############
 
 ### Netbeans ###
