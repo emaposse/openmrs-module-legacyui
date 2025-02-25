@@ -445,7 +445,7 @@ function toggleUnvoidedOrderErrorMessage(){
 <b class="boxHeader"><openmrs:message code="Select a Preferred Patient" /></b>
 <div class="box" style="max-height:160px; overflow:auto">
 <table class="box" cellspacing="2" cellpadding="2">
-<tr><th></th><th><openmrs:message code="Patient.id"/></th><th><openmrs:message code="Patient.identifiers"/></th><th><openmrs:message code="PersonName.givenName"/></th><th><openmrs:message code="PersonName.middleName"/></th><th><openmrs:message code="PersonName.familyName"/></th><th><openmrs:message code="Person.age"/></th><th><openmrs:message code="Person.gender"/></th><th><openmrs:message code="Person.birthdate"/></th></tr>
+<tr><th></th><th><openmrs:message code="Patient.id"/></th><th><openmrs:message code="Patient.identifiers"/></th><th><openmrs:message code="PersonName.givenName"/></th><th><openmrs:message code="PersonName.middleName"/></th><th><openmrs:message code="PersonName.familyName"/></th><th><openmrs:message code="Person.age"/></th><th><openmrs:message code="legacyui.sesp.gender"/></th><th><openmrs:message code="Person.birthdate"/></th></tr>
 <c:forEach items="${patientList}" var="patient" varStatus="status">
 <tr id="${status.index}tr" class="<c:choose>
 				<c:when test="${status.index % 2 == 0}">evenRow</c:when>

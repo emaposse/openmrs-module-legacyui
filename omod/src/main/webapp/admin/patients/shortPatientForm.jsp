@@ -482,7 +482,7 @@
 		<td class="inputCell">
 			<table id="demographicsTable" class="childTable">
 				<tr class="childTableRow">
-					<td class="demographicsHeaderColumn"><openmrs:message code="Person.gender"/></td>
+					<td class="demographicsHeaderColumn"><openmrs:message code="legacyui.sesp.gender"/></td>
 					<td class="demographicsHeaderColumn"><openmrs:message code="Person.age"/></td>
 					<td class="demographicsHeaderColumn"><openmrs:message code="Person.birthdate"/> <i style="font-weight: normal; font-size: 0.8em;">(<openmrs:message code="general.format"/>: <openmrs:datePattern />)</i></td>
 				</tr>
