@@ -614,7 +614,7 @@ function toggleUnvoidedOrderErrorMessage(){
 			<td id="info10"><c:out value="${patient.patientId}" /></td>
 		</tr>
 		<tr>
-			<th align="left"><openmrs:message code="Person.gender"/></th>
+			<th align="left"><openmrs:message code="legacyui.sesp.gender"/></th>
 			<td id="info11">
 				<c:choose>
 					<c:when test="${patient.gender == 'M'}">
@@ -677,7 +677,7 @@ function toggleUnvoidedOrderErrorMessage(){
 			<td id="info20"><c:out value="${patient.patientId}" /></td>
 		</tr>
 		<tr>
-			<th align="left"><openmrs:message code="Person.gender"/></th>
+			<th align="left"><openmrs:message code="legacyui.sesp.gender"/></th>
 			<td id="info21">
 				<c:choose>
 					<c:when test="${patient.gender == 'M'}">

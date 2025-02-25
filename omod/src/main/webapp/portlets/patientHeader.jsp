@@ -46,7 +46,7 @@
 		<td id="patientHeaderPatientGender"><c:if
 				test="${model.patient.gender == 'M'}">
 				<img src="${pageContext.request.contextPath}/images/male.gif"
-					alt='<openmrs:message code="Person.gender.male"/>'
+					alt='<openmrs:message code="legacyui.sesp.gender"/>'
 					id="maleGenderIcon" />
 			</c:if> <c:if test="${model.patient.gender == 'F'}">
 				<img src="${pageContext.request.contextPath}/images/female.gif"

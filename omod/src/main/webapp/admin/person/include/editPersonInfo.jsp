@@ -1,6 +1,6 @@
 <c:if test="${empty INCLUDE_PERSON_GENDER || (INCLUDE_PERSON_GENDER == 'true')}">
 	<tr>
-		<td><openmrs:message code="Person.gender"/></td>
+		<td><openmrs:message code="legacyui.sesp.gender"/></td>
 		<td><spring:bind path="gender">
 				<openmrs:forEachRecord name="gender">
 					<input type="radio" name="gender" id="${record.key}" value="${record.key}" <c:if test="${record.key == status.value}">checked</c:if> />
