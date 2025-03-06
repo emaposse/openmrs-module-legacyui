@@ -271,9 +271,12 @@ public class MergePatientsFormController extends SimpleFormController {
 						sb.append("ID da Obs: " + obsId + ", ");
 						sb.append("\t ID do Paciente: " + obs.getPersonId() + ", ");
 						sb.append("\t Nome do Paciente: " + obs.getPerson().getPersonName().getFullName() + ", ");
-						sb.append("\t ID da Consulta: " + obs.getEncounter().getId() + ", ");
-						sb.append("\t Tipo de Consulta: " + obs.getEncounter().getEncounterType().getName());
-						sb.append("\t Data da consulta: " + formatter.format(obs.getEncounter().getEncounterDatetime()));
+						
+						if (Objects.nonNull(obs.getEncounter())) {
+							sb.append("\t ID da Consulta: " + obs.getEncounter().getId() + ", ");
+							sb.append("\t Tipo de Consulta: " + obs.getEncounter().getEncounterType().getName());
+							sb.append("\t Data da consulta: " + formatter.format(obs.getEncounter().getEncounterDatetime()));
+						}
 						
 						sb.append(". Houve um erro na validação de possível valor inconsistente: ");
 						
@@ -346,8 +349,12 @@ public class MergePatientsFormController extends SimpleFormController {
 								sb.append("\t");
 							}
 						}
-						sb.append(". Consulte a consulta com o ID:  " + obs.getEncounter().getId()
-						        + " e corriga o possível valor inconsistente");
+						if (Objects.nonNull(obs.getEncounter())) {
+							
+							sb.append(". Consulte a consulta com o ID:  " + obs.getEncounter().getId()
+							        + " e corriga o possível valor inconsistente");
+							
+						}
 						
 						return sb.toString();
 					}
