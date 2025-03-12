@@ -167,7 +167,7 @@
 <div class="searchByMultiplePatientIdentifiers">
 	<openmrs:message code="Patient.merge.search_on"/><span class="required">*</span>: <br/>
 	<input type="checkbox" name="attr" id="identifier" value="identifier" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="identifier"><openmrs:message code="Patient.identifier"/></label> <br/>
-	<input type="checkbox" name="attr" id="gender" value="gender" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="gender"><openmrs:message code="Person.gender"/></label> <br/>
+	<input type="checkbox" name="attr" id="gender" value="gender" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="gender"><openmrs:message code="legacyui.sesp.gender"/></label> <br/>
 	<input type="checkbox" name="attr" id="birthdate" value="birthdate" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="birthdate"><openmrs:message code="Person.birthdate"/></label> <br/>
 	<input type="checkbox" name="attr" id="givenName" value="givenName" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="givenName"><openmrs:message code="PersonName.givenName"/></label> <br/>
 	<input type="checkbox" name="attr" id="middleName" value="middleName" onclick="selectAttribute(this)" onactivate="selectAttribute(this)"/><label for="middleName"><openmrs:message code="PersonName.middleName"/></label> <br/>

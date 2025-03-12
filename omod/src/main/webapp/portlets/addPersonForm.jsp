@@ -41,7 +41,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td><openmrs:message code="Person.gender"/><span class="required">*</span></td>
+						<td><spring:message code="legacyui.sesp.gender" /><span class="required">*</span></td>
 						<td>
 							<openmrs:forEachRecord name="gender">
 								<input type="radio" name="addGender" id="gender-${record.key}" value="${record.key}"  onClick="hideError('genderError')" /><label for="gender-${record.key}"> <openmrs:message code="Person.gender.${record.value}"/> </label>
